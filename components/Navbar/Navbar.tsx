@@ -2,6 +2,7 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import "./Navbar.css";
+import { Phone } from "lucide-react";
 
 type Props = {};
 
@@ -58,6 +59,14 @@ function Navbar({}: Props) {
             </button>
           </a>
         </div>
+
+        <a
+          href="tel: 7899896869"
+          className="lg:hidden w-28 px-2 py-[.5rem] font-semibold rounded-xl border-2 border-black flex items-center justify-around active:scale-95 transition-all duration-300"
+        >
+          <Phone />
+          Call Us
+        </a>
 
         <button
           className="lg:hidden flex flex-col h-12 w-12 rounded justify-center items-center group"
