@@ -92,6 +92,13 @@ function Navbar({}: Props) {
       {isOpen ? (
         <div className="bg-black z-40 fixed inset-0 flex flex-col items-center pt-44 space-y-10">
           <Link
+            href="/"
+            onClick={() => setIsOpen(!isOpen)}
+            className="text-3xl text-white  font-bold  hover:text-purple-600 transition-all duration-300"
+          >
+            <h2>- Home -</h2>
+          </Link>
+          <Link
             href="/about"
             onClick={() => setIsOpen(!isOpen)}
             className="text-3xl text-white  font-bold  hover:text-purple-600 transition-all duration-300"
