@@ -20,7 +20,14 @@ function FaqSection({}: Props) {
 
       {/* Image */}
       <div className="h-screen md:h-[50vh] lg:h-screen w-full  flex justify-start items-center px-5">
-        <div className="h-[80%] bg-yellow-100 w-full"></div>
+        <div className="h-[80%] shadow-lg bg-yellow-100 w-full relative rounded-l-3xl rounded-tr-3xl overflow-hidden">
+          <Image
+            src={smilingPatient}
+            fill
+            alt="smiling dental patient"
+            style={{ objectFit: "cover" }}
+          />
+        </div>
       </div>
     </div>
   );
