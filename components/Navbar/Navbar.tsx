@@ -3,12 +3,30 @@ import Link from "next/link";
 import React, { useState } from "react";
 import "./Navbar.css";
 import { Phone } from "lucide-react";
+import {
+  AnimatePresence,
+  motion,
+  useMotionValueEvent,
+  useScroll,
+} from "framer-motion";
 
 type Props = {};
 
 function Navbar({}: Props) {
   const [isOpen, setIsOpen] = useState(false);
-  const genericHamburgerLine = `h-1 w-6 my-1 rounded-full bg-black transition ease transform duration-300`;
+  // const [navbar, setNavbar] = useState(false);
+
+  // const { scrollY } = useScroll();
+
+  // useMotionValueEvent(scrollY, "change", (latest) => {
+  //   if (latest > 799) {
+  //     setNavbar(true);
+  //   } else if (latest < 800) {
+  //     setNavbar(false);
+  //   }
+  // });
+
+  const genericHamburgerLine = `h-1 w-6 my-1 rounded-full transition ease transform duration-300 bg-white `;
 
   return (
     <div className="w-full flex  items-center justify-center z-50">
@@ -89,56 +107,64 @@ function Navbar({}: Props) {
       </div>
 
       {/* Mobile slide down nav */}
-      {isOpen ? (
-        <div className="bg-black z-40 fixed inset-0 flex flex-col items-center pt-44 space-y-10">
-          <Link
-            href="/"
-            onClick={() => setIsOpen(!isOpen)}
-            className="text-3xl text-white  font-bold  hover:text-purple-600 transition-all duration-300"
+      <AnimatePresence>
+        {isOpen ? (
+          <motion.div
+            initial={{ opacity: 0, y: "-100%" }}
+            animate={{ opacity: 1, y: "0%" }}
+            exit={{ opacity: 0, y: "-100%" }}
+            transition={{ duration: 0.5, ease: "easeInOut" }}
+            className="bg-black z-40 fixed inset-0 flex flex-col items-center pt-44 space-y-10"
           >
-            <h2>- Home -</h2>
-          </Link>
-          <Link
-            href="/about"
-            onClick={() => setIsOpen(!isOpen)}
-            className="text-3xl text-white  font-bold  hover:text-purple-600 transition-all duration-300"
-          >
-            <h2>- About -</h2>
-          </Link>
-          <Link
-            href="/services"
-            onClick={() => setIsOpen(!isOpen)}
-            className="text-3xl text-white  font-bold  hover:text-purple-600 transition-all duration-300"
-          >
-            <h2>- Services -</h2>
-          </Link>
-          <a
-            href="/#contact"
-            className="text-xl"
-            onClick={() => setIsOpen(!isOpen)}
-          >
-            <button className="cssbuttons-io">
-              <span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  className="lucide lucide-phone"
-                >
-                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
-                </svg>
-                Contact Us
-              </span>
-            </button>
-          </a>
-        </div>
-      ) : null}
+            <Link
+              href="/"
+              onClick={() => setIsOpen(!isOpen)}
+              className="text-3xl text-white  font-bold  hover:text-purple-600 transition-all duration-300"
+            >
+              <h2>- Home -</h2>
+            </Link>
+            <Link
+              href="/about"
+              onClick={() => setIsOpen(!isOpen)}
+              className="text-3xl text-white  font-bold  hover:text-purple-600 transition-all duration-300"
+            >
+              <h2>- About -</h2>
+            </Link>
+            <Link
+              href="/services"
+              onClick={() => setIsOpen(!isOpen)}
+              className="text-3xl text-white  font-bold  hover:text-purple-600 transition-all duration-300"
+            >
+              <h2>- Services -</h2>
+            </Link>
+            <a
+              href="/#contact"
+              className="text-xl"
+              onClick={() => setIsOpen(!isOpen)}
+            >
+              <button className="cssbuttons-io">
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    className="lucide lucide-phone"
+                  >
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                  </svg>
+                  Contact Us
+                </span>
+              </button>
+            </a>
+          </motion.div>
+        ) : null}
+      </AnimatePresence>
     </div>
   );
 }
