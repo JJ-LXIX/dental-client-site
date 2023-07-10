@@ -37,19 +37,19 @@ function ContactSection({}: Props) {
           {/* Address and socials*/}
           <div className="flex flex-col items-around space-y-4">
             <div className="flex space-x-4 items-center">
-              <MapPin className="w-6 h-6" />
+              <MapPin className="w-6 h-6 text-slate-200" />
               <p className="text-slate-300 font-medium max-w-3xl">
                 Taj Mahal, Agra, Uttar Pradesh
               </p>
             </div>
             <div className="flex space-x-4 items-center">
-              <Phone className="w-6 h-6" />
+              <Phone className="w-6 h-6 text-slate-200" />
               <p className="text-slate-300 font-medium max-w-2xl">
                 +91 9999999999, +91 1111111111
               </p>
             </div>
             <div className="flex space-x-4 items-center">
-              <Mail className="w-6 h-6" />
+              <Mail className="w-6 h-6 text-slate-200" />
               <p className="text-slate-300 font-medium max-w-2xl">
                 jagrathshettylxix@gmail.com
               </p>
