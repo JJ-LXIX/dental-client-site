@@ -57,6 +57,7 @@ function FaqSection({}: Props) {
               alt="smiling dental patient"
               style={{ objectFit: "cover" }}
               className="p-2 rounded-l-3xl rounded-tr-3xl"
+              placeholder="blur"
             />
           </div>
         </div>
