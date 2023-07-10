@@ -4,8 +4,8 @@ import TestimonialSection from "@/components/Testimonial Section/TestimonialSect
 
 export default function Home() {
   return (
-    <main className="min-h-screen pt-28 md:pt-36">
-      <h2 className="text-4xl font-medium md:text-5xl lg:text-5xl text-center mx-auto max-w-[80%] lg:max-w-[90%]">
+    <main className="min-h-screen pt-28 md:pt-36 bg-black">
+      <h2 className="text-white text-4xl font-medium md:text-5xl lg:text-5xl text-center mx-auto max-w-[80%] lg:max-w-[90%]">
         About Us
       </h2>
       {/* TODO: add about us section */}
