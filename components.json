@@ -8,6 +8,7 @@
     "baseColor": "zinc",
     "cssVariables": true
   },
+  "tsx": false,
   "aliases": {
     "components": "@/components",
     "utils": "@/lib/utils"
