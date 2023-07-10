@@ -6,7 +6,7 @@ import WorkSection from "@/components/Work Section/WorkSection";
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen overflow-hidden">
       <HeroSection />
       <WhyUsSection />
       <WorkSection />
