@@ -49,6 +49,7 @@ function WhyUsSection({}: Props) {
                 fill
                 alt="Image of a woman smiling"
                 className="p-2 rounded-tl-[5rem] rounded-r-[5rem]"
+                placeholder="blur"
               />
             </motion.div>
           </div>

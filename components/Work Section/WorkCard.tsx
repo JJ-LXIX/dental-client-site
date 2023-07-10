@@ -12,6 +12,7 @@ function WorkCard({}: Props) {
           alt="dental work"
           style={{ objectFit: "cover" }}
           className="p-2 rounded-2xl"
+          placeholder="blur"
         />
       </div>
       <div className="absolute inset-0 z-2 bg-gradient-to-b from-transparent from-60% to-black group-hover:bg-black/90 transition-all duration-300"></div>
