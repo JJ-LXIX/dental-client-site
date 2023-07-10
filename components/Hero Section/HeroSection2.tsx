@@ -49,7 +49,6 @@ function HeroSection({}: Props) {
               style={{ objectFit: "cover" }}
               className="p-2 rounded-t-full"
               priority={true}
-              placeholder="blur"
             />
           </motion.div>
         </div>
