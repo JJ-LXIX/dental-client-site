@@ -1,0 +1,36 @@
+@keyframes marquee {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -300%;
+  }
+}
+
+.animate {
+  width: 600%;
+  animation: marquee 40s linear infinite;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+@media screen and (min-width: 1024px) {
+  @keyframes marquee2 {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: -125%;
+    }
+  }
+  .animate {
+    width: 250%;
+    animation: marquee2 50s linear infinite;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+
+  /* .animate:hover {
+    animation-play-state: paused;
+  } */
+}
