@@ -1,0 +1,48 @@
+/* .hero__section {
+  background-color: hsla(0, 0%, 100%, 1);
+  background-image: radial-gradient(
+      at 23% 15%,
+      hsla(287, 100%, 82%, 1) 0px,
+      transparent 40%
+    ),
+    radial-gradient(at 81% 74%, hsla(289, 100%, 76%, 1) 0px, transparent 70%),
+    radial-gradient(at 85% 3%, hsla(189, 100%, 56%, 1) 0px, transparent 70%),
+    radial-gradient(at 27% 75%, hsla(225, 94%, 68%, 1) 0px, transparent 70%);
+} */
+
+.one {
+  animation: Animate 25s linear infinite;
+}
+.two {
+  animation: Animate2 25s linear infinite reverse;
+}
+.three {
+  animation: Animate3 20s linear infinite;
+}
+
+@keyframes Animate {
+  0% {
+    -webkit-transform: rotate(0deg) translateX(50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg) translateX(50%) rotate(-360deg);
+  }
+}
+@keyframes Animate2 {
+  0% {
+    -webkit-transform: rotate(180deg) translateX(40%) rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(540deg) translateX(40%) rotate(-540deg);
+  }
+}
+@keyframes Animate3 {
+  0% {
+    -webkit-transform: rotate(360deg) translateX(100%) rotate(-360deg)
+      translateY(-60%);
+  }
+  100% {
+    -webkit-transform: rotate(720deg) translateX(100%) rotate(-720deg)
+      translateY(-60%);
+  }
+}
