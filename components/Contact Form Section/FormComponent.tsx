@@ -63,7 +63,7 @@ function FormComponent({}: Props) {
     <Form {...form}>
       <form
         onSubmit={form.handleSubmit(onSubmit)}
-        className=" grid grid-cols-1 gap-4 lg:grid-cols-2 lg:space-y-0 lg:gap-5 w-full lg:max-w-[80%]  mx-auto p-5"
+        className="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:space-y-0 lg:gap-5 w-full lg:max-w-[80%]  mx-auto p-5"
       >
         {/* First Name*/}
         <FormField
@@ -74,7 +74,7 @@ function FormComponent({}: Props) {
               <FormLabel className="text-sky-500">First Name</FormLabel>
               <FormControl>
                 <Input
-                  className="shadow-lg border-zinc-500 bg-zinc-800  "
+                  className="shadow-lg border-zinc-500 bg-zinc-800 text-zinc-200  "
                   placeholder="first name "
                   {...field}
                 />
@@ -92,7 +92,7 @@ function FormComponent({}: Props) {
               <FormLabel className="text-sky-500">Last Name</FormLabel>
               <FormControl>
                 <Input
-                  className="shadow-lg border-zinc-500  bg-zinc-800"
+                  className="shadow-lg border-zinc-500  bg-zinc-800 text-zinc-200"
                   placeholder="last name"
                   {...field}
                 />
@@ -110,7 +110,7 @@ function FormComponent({}: Props) {
               <FormLabel className="text-sky-500">Email</FormLabel>
               <FormControl>
                 <Input
-                  className="shadow-lg border-zinc-500 bg-zinc-800 "
+                  className="shadow-lg border-zinc-500 bg-zinc-800 text-zinc-200 "
                   placeholder="email"
                   {...field}
                 />
@@ -128,7 +128,7 @@ function FormComponent({}: Props) {
               <FormLabel className="text-sky-500">Phone Number</FormLabel>
               <FormControl>
                 <Input
-                  className="shadow-lg border-zinc-500 bg-zinc-800 "
+                  className="shadow-lg border-zinc-500 bg-zinc-800 text-zinc-200 "
                   placeholder="phone number"
                   {...field}
                 />
@@ -148,7 +148,7 @@ function FormComponent({}: Props) {
                 <Input
                   placeholder="Enter your custom message here"
                   {...field}
-                  className="py-10 shadow-lg border-zinc-500 bg-zinc-800 "
+                  className="py-10 shadow-lg border-zinc-500 bg-zinc-800 text-zinc-200 "
                 />
               </FormControl>
               <FormMessage />
