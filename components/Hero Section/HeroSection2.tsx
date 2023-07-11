@@ -2,12 +2,7 @@
 import "./HeroSection.css";
 import Image from "next/image";
 import DentalHero from "@/public/images/dental-hero.jpg";
-import {
-  useScroll,
-  useTransform,
-  motion,
-  useMotionValueEvent,
-} from "framer-motion";
+import { useScroll, useTransform, motion } from "framer-motion";
 type Props = {};
 
 function HeroSection({}: Props) {
@@ -15,8 +10,17 @@ function HeroSection({}: Props) {
   let y = useTransform(scrollY, [0, 500], ["0%", "-20%"]);
   let scale = useTransform(scrollY, [0, 500], ["100%", "130%"]);
 
+  const variants = {
+    initial: {
+      opacity: 0,
+    },
+    animate: {
+      opacity: 1,
+    },
+  };
+
   return (
-    <div className="min-h-screen lg:min-h-[150vh] pb-[10rem]  bg-black w-full hero__section relative overflow-hidden  ">
+    <div className="min-h-screen lg:min-h-[150vh] pb-[10rem]  bg-black w-full hero__section relative  ">
       <div className="one absolute blur-3xl w-[10rem] h-[10rem] lg:w-[35rem] lg:h-[35rem] bg-red-500/50 rounded-full  left-[30%]"></div>
       <div className="two absolute blur-3xl w-[10rem] h-[10rem] lg:w-[35rem] lg:h-[35rem] bg-purple-500/50 rounded-full  left-[30%] bottom-[20%]"></div>
       <div className="three absolute blur-3xl w-[10rem] h-[10rem] lg:w-[35rem] lg:h-[35rem] bg-sky-500/50 rounded-full  left-[40%] bottom-[15%]"></div>
@@ -27,12 +31,24 @@ function HeroSection({}: Props) {
         {/*Text*/}
         <div className="w-full h-[85%] lg:h-[35%] md:h-[50%] md:pt-40 lg:pt-36 tracking-tighter pb-5 lg:pb-0 flex justify-center items-center ">
           <div className="h-full w-full md:w-[90%] md:h-auto  2xl:w-full flex flex-col justify-end  md:justify-center md:items-center space-y-5 md:space-y-10 lg:space-y-10">
-            <h1 className="text-white text-3xl md:text-6xl lg:text-5xl xl:text-6xl  text-center  xl:max-w-4xl">
+            <motion.h1
+              variants={variants}
+              initial="initial"
+              animate="animate"
+              transition={{ duration: 0.6 }}
+              className="text-white text-3xl md:text-6xl lg:text-5xl xl:text-6xl  text-center  xl:max-w-4xl"
+            >
               Creating Healthy Smiles: Dentica, Your Trusted Dental Experts
-            </h1>
-            <h3 className="text-gray-100 text-xl md:text-4xl lg:text-3xl xl:text-4xl  font-light text-center  xl:max-w-3xl">
+            </motion.h1>
+            <motion.h3
+              variants={variants}
+              initial="initial"
+              animate="animate"
+              transition={{ duration: 0.5, delay: 0.6 }}
+              className="text-gray-100 text-xl md:text-4xl lg:text-3xl xl:text-4xl  font-light text-center  xl:max-w-3xl"
+            >
               Discover Personalized Dental Solutions for Your Needs
-            </h3>
+            </motion.h3>
           </div>
         </div>
 
