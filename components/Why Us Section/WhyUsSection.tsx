@@ -41,7 +41,7 @@ function WhyUsSection({}: Props) {
               whileInView="animate"
               viewport={{ once: true }}
               transition={{ ...transition }}
-              className="overflow-hidden border-2 border-white relative h-[90%] w-[65%] md:h-[60%] lg:h-[100%] lg:w-[65%]  rounded-tl-[5rem] rounded-r-[5rem]"
+              className="overflow-hidden border-2 border-dashed border-white relative h-[90%] w-[65%] md:h-[60%] lg:h-[100%] lg:w-[65%]  rounded-tl-[5rem] rounded-r-[5rem]"
             >
               <Image
                 src={SmilingWoman}
