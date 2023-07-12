@@ -87,6 +87,7 @@ function Navbar({}: Props) {
         </a>
 
         <button
+          aria-label="navigation dropdown icon"
           className="lg:hidden flex flex-col h-12 w-12 rounded justify-center items-center group"
           onClick={() => setIsOpen(!isOpen)}
         >
