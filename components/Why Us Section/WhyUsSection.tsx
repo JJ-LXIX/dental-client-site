@@ -28,6 +28,57 @@ const variants2 = {
 const transition = { ease: "easeInOut", duration: 0.6 };
 
 function WhyUsSection({}: Props) {
+  const isMobile = window.innerWidth < 768;
+  if (isMobile)
+    return (
+      <div className="w-full bg-black text-white flex items-center py-14 lg:py-20  lg:min-h-screen">
+        <div className="w-full flex justify-center ">
+          {/* Adjust width of container */}
+          <div className="w-full lg:max-w-6xl flex flex-col md:flex-row ">
+            {/* Left Side */}
+            <div className="h-[55svh] md:h-auto w-full flex justify-center items-center md:items-start md:mt-[5rem] lg:mt-0">
+              <div className="overflow-hidden border-2 border-dashed border-white relative h-[90%] w-[65%] md:h-[60%] lg:h-[100%] lg:w-[65%]  rounded-tl-[5rem] rounded-r-[5rem]">
+                <Image
+                  src={SmilingWoman}
+                  style={{ objectFit: "cover" }}
+                  fill
+                  alt="Image of a woman smiling"
+                  className="p-2 rounded-tl-[5rem] rounded-r-[5rem]"
+                  placeholder="blur"
+                />
+              </div>
+            </div>
+
+            {/* Right Side */}
+            <div className="md:min-h-[70svh] w-full flex items-center ">
+              <div className=" w-full p-4">
+                <h2 className="text-4xl font-medium lg:text-5xl lg:max-w-[90%]">
+                  Why You Should Choose Our Dental Service?
+                </h2>
+                <h3 className="mt-4 md:max-w-[90%] text-white">
+                  Discover why our dental service stands out from the rest. From
+                  our experienced team to our state-of-the-art equipment, we
+                  provide exceptional care for all your dental needs.
+                </h3>
+
+                {/* Cards */}
+                <div>
+                  <div className="md:w-[90%] min-h-[6rem] my-6 border border-zinc-200/70 rounded-3xl ">
+                    <CardComponent number={0} />
+                  </div>
+                  <div className="md:w-[90%] min-h-[6rem] my-6 border border-zinc-200/70 rounded-3xl ">
+                    <CardComponent number={1} />
+                  </div>
+                  <div className="md:w-[90%] min-h-[6rem] my-6 border border-zinc-200/70 rounded-3xl ">
+                    <CardComponent number={2} />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
   return (
     <div className="w-full bg-black text-white flex items-center py-14 lg:py-20  lg:min-h-screen">
       <div className="w-full flex justify-center ">
