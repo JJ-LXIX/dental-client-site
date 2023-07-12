@@ -1,36 +1,16 @@
-// "use client";
 import React from "react";
 import Accordian from "./Accordian";
 import Image from "next/image";
 import smilingPatient from "@/public/images/woman-dentist-patient.jpg";
-// import { motion } from "framer-motion";
 
 type Props = {};
-
-// const variants = {
-//   initial: {
-//     opacity: 0,
-//   },
-//   animate: {
-//     opacity: 1,
-//   },
-// };
-
-// const transition = { ease: "easeInOut", duration: 1 };
 
 function FaqSection({}: Props) {
   return (
     <div className="bg-black w-full pt-32 lg:pt-10 pb-10 lg:pb-0 ">
       {/* Text & FAQ */}
       <div className="lg:max-w-6xl xl:mx-auto flex flex-col md:flex-row items-center md:justify-center ">
-        <div
-          // variants={variants}
-          // initial="initial"
-          // whileInView="animate"
-          // transition={transition}
-          // viewport={{ once: true }}
-          className="w-full px-5 "
-        >
+        <div className="w-full px-5 ">
           <h2 className="text-4xl font-medium lg:text-5xl text-slate-100 lg:max-w-md">
             Frequently Asked Questions for a Healthy Smile.
           </h2>
@@ -43,14 +23,7 @@ function FaqSection({}: Props) {
 
         {/* Image */}
         <div className="h-screen md:h-[50vh] lg:h-screen w-full  flex justify-start items-center px-5">
-          <div
-            // variants={variants}
-            // initial="initial"
-            // whileInView="animate"
-            // transition={transition}
-            // viewport={{ once: true }}
-            className="h-[80%] border-2 border-blue-400 shadow-lg w-full relative rounded-l-3xl rounded-tr-3xl overflow-hidden"
-          >
+          <div className="h-[80%] border-2 border-blue-400 shadow-lg w-full relative rounded-l-3xl rounded-tr-3xl overflow-hidden">
             <Image
               src={smilingPatient}
               fill
