@@ -34,27 +34,6 @@ function HeroSection({}: Props) {
         {/*Text*/}
         <div className="w-full h-[85%] lg:h-[35%] md:h-[50%] md:pt-40 lg:pt-36 tracking-tighter pb-5 lg:pb-0 flex justify-center items-center ">
           <div className="h-full w-full md:w-[90%] md:h-auto  2xl:w-full flex flex-col justify-end  md:justify-center md:items-center space-y-5 md:space-y-10 lg:space-y-10">
-            {/* Animated Text */}
-            {/* <motion.h1
-              variants={variants}
-              initial="initial"
-              animate="animate"
-              transition={{ duration: 0.6 }}
-              className="text-white text-3xl md:text-6xl lg:text-5xl xl:text-6xl  text-center  xl:max-w-4xl"
-            >
-              Creating Healthy Smiles: Dentica, Your Trusted Dental Experts
-            </motion.h1>
-            <motion.h3
-              variants={variants}
-              initial="initial"
-              animate="animate"
-              transition={{ duration: 0.5, delay: 0.6 }}
-              className="text-gray-100 text-xl md:text-4xl lg:text-3xl xl:text-4xl  font-light text-center  xl:max-w-3xl"
-            >
-              Discover Personalized Dental Solutions for Your Needs
-            </motion.h3> */}
-
-            {/* Non Animated Text */}
             <h1 className="text-white text-3xl md:text-6xl lg:text-5xl xl:text-6xl  text-center  xl:max-w-4xl">
               Creating Healthy Smiles: Dentica, Your Trusted Dental Experts
             </h1>
