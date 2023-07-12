@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import SmilingWoman from "@/public/images/whyUs.jpg";
 import CardComponent from "./CardComponent";
 import { motion } from "framer-motion";
@@ -28,7 +28,12 @@ const variants2 = {
 const transition = { ease: "easeInOut", duration: 0.6 };
 
 function WhyUsSection({}: Props) {
-  const isMobile = window.innerWidth < 768;
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => {
+    if (window.innerWidth < 768) {
+      setIsMobile(true);
+    }
+  }, []);
   if (isMobile)
     return (
       <div className="w-full bg-black text-white flex items-center py-14 lg:py-20  lg:min-h-screen">
