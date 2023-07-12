@@ -3,6 +3,9 @@ import "./HeroSection.css";
 import Image from "next/image";
 import DentalHero from "@/public/images/dental-hero.jpg";
 import { useScroll, useTransform, motion } from "framer-motion";
+import { Inter } from "next/font/google";
+
+const inter = Inter({ subsets: ["latin"] });
 type Props = {};
 
 function HeroSection({}: Props) {
@@ -55,9 +58,11 @@ function HeroSection({}: Props) {
             <h1 className="text-white text-3xl md:text-6xl lg:text-5xl xl:text-6xl  text-center  xl:max-w-4xl">
               Creating Healthy Smiles: Dentica, Your Trusted Dental Experts
             </h1>
-            <h3 className="text-gray-100 text-xl md:text-4xl lg:text-3xl xl:text-4xl  font-light text-center  xl:max-w-3xl">
+            <h2
+              className={`text-gray-100 text-xl md:text-4xl lg:text-3xl xl:text-4xl  font-light text-center  xl:max-w-3xl ${inter.className}`}
+            >
               Discover Personalized Dental Solutions for Your Needs
-            </h3>
+            </h2>
           </div>
         </div>
 
