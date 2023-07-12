@@ -38,7 +38,7 @@ function Schedule({}: Props) {
       {/* CTA Button */}
 
       <a href="/#contact" className="h-14 lg:h-12 rounded-lg w-[90%]">
-        <button className="bg-sky-600 h-full rounded-lg w-full text-center text-white font-semibold text-base active:scale-90 ring-transparent hover:bg-sky-600 hover:scale-105 transition-all duration-300">
+        <button className="bg-sky-800 h-full rounded-lg w-full text-center text-white font-semibold text-base active:scale-90 ring-transparent hover:bg-sky-700 hover:scale-105 transition-all duration-300">
           MAKE AN APPOINTMENT
         </button>
       </a>

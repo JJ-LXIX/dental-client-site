@@ -156,7 +156,7 @@ function FormComponent({}: Props) {
           )}
         />
         <Button
-          className="justify-self-start  bg-sky-600 text-white font-semibold hover:scale-110 active:scale-95 transition-all duration-300"
+          className="justify-self-start  bg-sky-800 text-white font-semibold hover:scale-110 active:scale-95 transition-all duration-300"
           type="submit"
         >
           Submit
