@@ -4,12 +4,23 @@ import Image from "next/image";
 import DentalHero from "@/public/images/dental-hero.jpg";
 import { useScroll, useTransform, motion } from "framer-motion";
 import { Inter } from "next/font/google";
+import { useEffect, useState } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 type Props = {};
 
 function HeroSection({}: Props) {
-  const isMobile = window.innerWidth < 768;
+  const [isMobile, setIsMobile] = useState(false);
+  let { scrollY } = useScroll();
+  let y = useTransform(scrollY, [0, 500], ["0%", "-20%"]);
+  let scale = useTransform(scrollY, [0, 500], ["100%", "130%"]);
+
+  useEffect(() => {
+    if (window.innerWidth < 768) {
+      setIsMobile(true);
+    }
+  }, []);
+  // const isMobile = window.innerWidth < 768;
   if (isMobile)
     return (
       <div className="min-h-screen lg:min-h-[150vh] pb-[10rem]  bg-black w-full hero__section relative  ">
@@ -51,9 +62,7 @@ function HeroSection({}: Props) {
       </div>
     );
   // Not Mobile Devices
-  let { scrollY } = useScroll();
-  let y = useTransform(scrollY, [0, 500], ["0%", "-20%"]);
-  let scale = useTransform(scrollY, [0, 500], ["100%", "130%"]);
+
   return (
     <div className="min-h-screen lg:min-h-[150vh] pb-[10rem]  bg-black w-full hero__section relative  ">
       <div className="one absolute blur-3xl w-[10rem] h-[10rem] lg:w-[35rem] lg:h-[35rem] bg-red-500/50 rounded-full  left-[30%]"></div>
