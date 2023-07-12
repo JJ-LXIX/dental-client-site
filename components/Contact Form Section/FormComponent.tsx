@@ -55,8 +55,7 @@ function FormComponent({}: Props) {
   // Submit Handler
   function onSubmit(values: z.infer<typeof formSchema>) {
     // Do something with the form values.
-
-    console.log(values);
+    // console.log(values);
   }
 
   return (
