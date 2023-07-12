@@ -10,14 +10,14 @@ function HeroSection({}: Props) {
   let y = useTransform(scrollY, [0, 500], ["0%", "-20%"]);
   let scale = useTransform(scrollY, [0, 500], ["100%", "130%"]);
 
-  const variants = {
-    initial: {
-      opacity: 0,
-    },
-    animate: {
-      opacity: 1,
-    },
-  };
+  // const variants = {
+  //   initial: {
+  //     opacity: 0,
+  //   },
+  //   animate: {
+  //     opacity: 1,
+  //   },
+  // };
 
   return (
     <div className="min-h-screen lg:min-h-[150vh] pb-[10rem]  bg-black w-full hero__section relative  ">
@@ -31,7 +31,7 @@ function HeroSection({}: Props) {
         {/*Text*/}
         <div className="w-full h-[85%] lg:h-[35%] md:h-[50%] md:pt-40 lg:pt-36 tracking-tighter pb-5 lg:pb-0 flex justify-center items-center ">
           <div className="h-full w-full md:w-[90%] md:h-auto  2xl:w-full flex flex-col justify-end  md:justify-center md:items-center space-y-5 md:space-y-10 lg:space-y-10">
-            <motion.h1
+            {/* <motion.h1
               variants={variants}
               initial="initial"
               animate="animate"
@@ -48,7 +48,15 @@ function HeroSection({}: Props) {
               className="text-gray-100 text-xl md:text-4xl lg:text-3xl xl:text-4xl  font-light text-center  xl:max-w-3xl"
             >
               Discover Personalized Dental Solutions for Your Needs
-            </motion.h3>
+  </motion.h3> */}
+
+            {/* Non Animated */}
+            <h1 className="text-white text-3xl md:text-6xl lg:text-5xl xl:text-6xl  text-center  xl:max-w-4xl">
+              Creating Healthy Smiles: Dentica, Your Trusted Dental Experts
+            </h1>
+            <h3 className="text-gray-100 text-xl md:text-4xl lg:text-3xl xl:text-4xl  font-light text-center  xl:max-w-3xl">
+              Discover Personalized Dental Solutions for Your Needs
+            </h3>
           </div>
         </div>
 
