@@ -1,8 +1,9 @@
 import FormComponent from "./FormComponent";
-import MapComponent from "./MapComponent";
+// import MapComponent from "./MapComponent";
+import dynamic from "next/dynamic";
+const MapComponent = dynamic(() => import("./MapComponent"), { ssr: false });
 
 type Props = {};
-
 function ContactFormSection({}: Props) {
   return (
     <div className="bg-black ">
