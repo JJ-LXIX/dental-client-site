@@ -9,6 +9,9 @@ export default function Home() {
         About Us
       </h2>
       {/* TODO: add about us section */}
+      <div className="min-h-screen text-white flex items-center justify-center">
+        Content to be added based on you!
+      </div>
       <TestimonialSection />
       <ContactFormSection />
       <ContactSection />

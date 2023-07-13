@@ -12,6 +12,9 @@ export default function Home() {
         service and personalized care to each of our clients.
       </h3>
       {/* TODO: Add services here */}
+      <div className="min-h-screen text-white flex items-center justify-center">
+        Content to be added based on you!
+      </div>
       <TestimonialSection />
       <ContactSection />
     </main>
