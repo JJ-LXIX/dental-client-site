@@ -78,7 +78,7 @@ function FormComponent({}: Props) {
                   {...field}
                 />
               </FormControl>
-              <FormMessage />
+              <FormMessage className="text-red-500" />
             </FormItem>
           )}
         />
@@ -96,7 +96,7 @@ function FormComponent({}: Props) {
                   {...field}
                 />
               </FormControl>
-              <FormMessage />
+              <FormMessage className="text-red-500" />
             </FormItem>
           )}
         />
@@ -114,7 +114,7 @@ function FormComponent({}: Props) {
                   {...field}
                 />
               </FormControl>
-              <FormMessage />
+              <FormMessage className="text-red-500" />
             </FormItem>
           )}
         />
@@ -132,7 +132,7 @@ function FormComponent({}: Props) {
                   {...field}
                 />
               </FormControl>
-              <FormMessage />
+              <FormMessage className="text-red-500" />
             </FormItem>
           )}
         />
@@ -150,7 +150,7 @@ function FormComponent({}: Props) {
                   className="py-10 shadow-lg border-zinc-500 bg-zinc-800 text-zinc-200 "
                 />
               </FormControl>
-              <FormMessage />
+              <FormMessage className="text-red-500" />
             </FormItem>
           )}
         />
