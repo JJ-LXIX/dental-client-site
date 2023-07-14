@@ -7,7 +7,7 @@ type Props = { number: number };
 function TestimonialCard({ number }: Props) {
   return (
     <div
-      className={`testimonial__card mt-20 shadow-[5px_10px_10px_0px] h-[23rem] w-[13rem] md:min-h-[28rem] md:w-[28rem]  lg:w-[20rem]   rounded-3xl px-3 py-3 md:px-6 md:py-14 border-4 flex flex-col items-center justify-around
+      className={`testimonial__card mt-20 shadow-[5px_10px_10px_0px] h-[23rem] w-[13rem] md:min-h-[28rem] md:w-[28rem]  lg:w-[20rem] 3xl:w-[24rem] rounded-3xl px-3 py-3 md:px-6 md:py-14 border-4 flex flex-col items-center justify-around
     ${
       number === 1
         ? "border-red-200 shadow-red-400"
