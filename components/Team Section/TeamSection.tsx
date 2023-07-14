@@ -56,6 +56,7 @@ function TeamSection({}: Props) {
             variants={variants}
             initial="initial"
             whileInView="animate"
+            viewport={{ once: true }}
             transition={{ ...transition }}
             className="text-center text-white text-4xl lg:text-5xl font-medium"
           >
@@ -65,6 +66,7 @@ function TeamSection({}: Props) {
             variants={variants}
             initial="initial"
             whileInView="animate"
+            viewport={{ once: true }}
             transition={{ delay: 0.6, ...transition }}
             className="text-center text-lg text-zinc-300"
           >
@@ -77,6 +79,7 @@ function TeamSection({}: Props) {
           variants={variants}
           initial="initial"
           whileInView="animate"
+          viewport={{ once: true }}
           transition={{ delay: 0.3, ...transition }}
           className="flex flex-col space-y-5 items-center mt-4 md:space-y-0 md:gap-y-8 md:grid md:grid-cols-2 lg:grid-cols-4 md:justify-items-center md:items-center"
         >
