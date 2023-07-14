@@ -6,7 +6,7 @@ type Props = {};
 
 function TeamCard({}: Props) {
   return (
-    <div className="h-[20rem] w-[80%] md:w-[90%] md:h-[25rem] lg:h-[22rem] relative group shadow-md shadow-black/50 overflow-hidden rounded-xl border-2 border-green-300">
+    <div className="h-[20rem] w-[80%] md:w-[90%] md:h-[25rem] lg:h-[22rem] relative group shadow-md shadow-black/50 overflow-hidden rounded-xl border-2 border-white">
       <div className="absolute  inset-0  ">
         <Image
           src={dentistImage}
