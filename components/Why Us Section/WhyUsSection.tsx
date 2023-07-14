@@ -25,7 +25,7 @@ const variants2 = {
   },
 };
 
-const transition = { ease: "easeInOut", duration: 0.6 };
+const transition = { ease: "easeInOut", duration: 0.3 };
 
 function WhyUsSection({}: Props) {
   const [isMobile, setIsMobile] = useState(false);
@@ -125,7 +125,7 @@ function WhyUsSection({}: Props) {
                 initial="initial"
                 whileInView="animate"
                 viewport={{ once: true }}
-                transition={{ delay: 0.4, ...transition }}
+                transition={{ delay: 0.3, ...transition }}
                 className="text-4xl font-medium lg:text-5xl lg:max-w-[90%]"
               >
                 Why You Should Choose Our Dental Service?
@@ -135,7 +135,7 @@ function WhyUsSection({}: Props) {
                 initial="initial"
                 whileInView="animate"
                 viewport={{ once: true }}
-                transition={{ delay: 0.8, ...transition }}
+                transition={{ delay: 0.6, ...transition }}
                 className="mt-4 md:max-w-[90%] text-white"
               >
                 Discover why our dental service stands out from the rest. From
@@ -149,7 +149,7 @@ function WhyUsSection({}: Props) {
                 initial="initial"
                 whileInView="animate"
                 viewport={{ once: true }}
-                transition={{ delay: 1.2, ...transition }}
+                transition={{ delay: 0.9, ...transition }}
               >
                 <div className="md:w-[90%] min-h-[6rem] my-6 border border-zinc-200/70 rounded-3xl ">
                   <CardComponent number={0} />
