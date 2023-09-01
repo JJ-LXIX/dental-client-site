@@ -1,6 +1,6 @@
 import ContactSection from "@/components/Contact Section/ContactSection";
 import FaqSection from "@/components/FAQ Section/FaqSection";
-import HeroSection from "@/components/Hero Section/HeroSection2";
+import HeroSection2 from "@/components/Hero Section/HeroSection2";
 import TeamSection from "@/components/Team Section/TeamSection";
 import TestimonialSection from "@/components/Testimonial Section/TestimonialSection";
 import WhyUsSection from "@/components/Why Us Section/WhyUsSection";
@@ -10,7 +10,7 @@ import ContactFormSection from "@/components/Contact Form Section/ContactFormSec
 export default function Home() {
   return (
     <main className="min-h-screen overflow-hidden">
-      <HeroSection />
+      <HeroSection2 />
       <WhyUsSection />
       <WorkSection />
       <FaqSection />
