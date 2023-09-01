@@ -1,8 +1,8 @@
 import dynamic from "next/dynamic";
 import FormComponent from "./FormComponent";
-// import MapComponent from "./MapComponent";
+import MapComponent from "./MapComponent";
 // import dynamic from "next/dynamic";
-const MapComponent = dynamic(() => import("./MapComponent"));
+// const MapComponent = dynamic(() => import("./MapComponent"));
 
 type Props = {};
 function ContactFormSection({}: Props) {

@@ -8,7 +8,7 @@ import "maplibre-gl/dist/maplibre-gl.css";
 function MapComponent({}) {
   return (
     <div className="w-[80%] mx-auto md:w-full h-screen md:h-[50vh] lg:h-[70vh]  relative shadow-lg rounded-2xl overflow-hidden border-2 border-white p-2">
-      <Map
+      {/* <Map
         mapLib={maplibregl}
         className="absolute inset-0 p-2 rounded-2xl"
         initialViewState={{
@@ -21,7 +21,8 @@ function MapComponent({}) {
       >
         <NavigationControl position="top-left" />
         <Marker longitude={78.042} latitude={27.173} color="red" />
-      </Map>
+      </Map> */}
+      <p className="text-white">Map Image Here</p>
     </div>
   );
 }
