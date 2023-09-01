@@ -54,7 +54,7 @@ function HeroSection({}: Props) {
                 alt="Image of a dental patient smiling"
                 style={{ objectFit: "cover" }}
                 className="p-2 rounded-t-full"
-                priority
+                priority={true}
               />
             </div>
           </div>
