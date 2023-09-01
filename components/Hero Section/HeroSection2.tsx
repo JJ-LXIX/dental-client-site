@@ -20,7 +20,7 @@ function HeroSection({}: Props) {
       setIsMobile(true);
     }
   }, []);
-  // const isMobile = window.innerWidth < 768;
+
   if (isMobile)
     return (
       <div className="min-h-screen lg:min-h-[150vh] pb-[10rem]  bg-black w-full hero__section relative  ">
@@ -54,7 +54,7 @@ function HeroSection({}: Props) {
                 alt="Image of a dental patient smiling"
                 style={{ objectFit: "cover" }}
                 className="p-2 rounded-t-full"
-                priority={true}
+                priority
               />
             </div>
           </div>
